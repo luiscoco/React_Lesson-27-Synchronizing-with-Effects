@@ -1,0 +1,92 @@
+:root {
+  --bg: #0b1020;
+  --panel: #11162a;
+  --muted: #a6b0cf;
+  --accent: #6aa0ff;
+  --accent-2: #7cf6d2;
+  --text: #e7ebff;
+  --border: #243056;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  color: var(--text);
+  background: radial-gradient(1200px 600px at 100% -10%, #1b2550 0%, var(--bg) 45%);
+}
+
+.app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+h1 {
+  letter-spacing: 0.2px;
+  font-size: 28px;
+  margin: 0 0 16px;
+}
+
+section {
+  margin: 20px 0 28px;
+  background: linear-gradient(180deg, #121a34 0%, var(--panel) 100%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 18px 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0 0 12px;
+  color: var(--accent-2);
+}
+
+label, input, button {
+  font-size: 14px;
+}
+
+input[type="text"], input[type="search"] {
+  background: #0d1226;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  outline: none;
+  transition: border 120ms ease;
+}
+
+input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(106, 160, 255, 0.15);
+}
+
+button {
+  background: linear-gradient(180deg, #2a3a7f 0%, #243364 100%);
+  color: white;
+  border: 1px solid #304089;
+  border-radius: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: transform 120ms ease, filter 120ms ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+small.muted {
+  color: var(--muted);
+}
