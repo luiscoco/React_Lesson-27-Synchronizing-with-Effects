@@ -1,4 +1,4 @@
-# React useEffect Practice (React 19 + Vite)
+# React 19.2 - Lesson 27 - Synchronizing with Effects
 
 This project demonstrates synchronization patterns with `useEffect`:
 
